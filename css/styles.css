@@ -109,7 +109,22 @@ html{
     text-transform: uppercase;
 }
 
+.text-tipo1{
+    padding-top: 20px;
+    font-style: bold;
+}
+
+.text-tipo2{
+    font-size: 40px;
+    text-align: start;
+}
+
 /*  -----------------  MAIN INDEX  -----------------  */
+
+.mislider{
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 .info_1{
     display: flex;
@@ -473,6 +488,12 @@ html{
 
 @media only screen and (min-width: 720px) and (max-width: 1280px){
 
+    /* -------------  HEADER  ------------ */
+
+    .text-tipo2{
+        font-size: 28px;
+    }
+
     /* ---------------  INDEX  ----------- */
 
     .contenido_index1 iframe{
@@ -545,6 +566,10 @@ html{
 
     .title{
         padding-top: 60px;
+    }
+
+    .text-tipo2{
+        font-size: 15px;
     }
 
     /* ---------------  INDEX  ----------- */
