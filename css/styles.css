@@ -42,10 +42,6 @@
     margin: 20px;
 }
 
-.nav-mobile{
-    display: none;
-}
-
 .header nav a{
     text-decoration: none;
     color: #182a5e;
@@ -533,12 +529,6 @@ html{
 @media only screen and (max-width: 719px){
 
     /* -------------  HEADER  ------------ */
-    .nav1{
-        display: none;
-    }
-    .nav-mobile{
-        display: flex;
-    }
    
     .header{
         height: 60px;
