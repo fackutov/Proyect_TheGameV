@@ -9,9 +9,6 @@
 .body{
     height: 100vh;
     background-image: linear-gradient(rgb(211, 210, 210), rgb(111, 113, 219), rgb(211, 210, 210));
-    /*width: 100%;
-    background-image: url(../multimedia/images/fondos/fondo1.png);
-    background-size: cover;*/
 }
 
 /*  -----------------  HEADER  -----------------  */
@@ -24,6 +21,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 10;
 }
 
 .header div img:hover{
@@ -42,6 +40,10 @@
 .header nav ul li{
     list-style: none;
     margin: 20px;
+}
+
+.nav-mobile{
+    display: none;
 }
 
 .header nav a{
@@ -76,7 +78,7 @@
 .subir i{
     color: rgb(140, 236, 153);
     font-size: 35px;
-    line-height: 50px;
+    line-height: 45px;
     text-shadow: 0 0 25px black;
 }
 
@@ -224,7 +226,7 @@ html{
 }
 
 .galeria div:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
             /*  HORIZON ZERO DAWN  */
@@ -232,8 +234,8 @@ html{
 
 .galeria_horizonZeroDawn{
     display: grid;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: center;
+    width: 100%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 20px;
@@ -283,8 +285,8 @@ html{
 
 .galeria_shadowOfTheTombRaider{
     display: grid;
-    justify-content:space-between;
-    width: 90%;
+    justify-content:center;
+    width: 100%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 20px;
@@ -531,6 +533,12 @@ html{
 @media only screen and (max-width: 719px){
 
     /* -------------  HEADER  ------------ */
+    .nav1{
+        display: none;
+    }
+    .nav-mobile{
+        display: flex;
+    }
    
     .header{
         height: 60px;
@@ -554,7 +562,7 @@ html{
     .info_1{
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .info_1 div{
@@ -562,7 +570,7 @@ html{
     }
 
     .info_1 iframe{
-        width: 80%;
+        width: 100%;
         padding-left: 10%;
         padding-right: 10%;
     }
@@ -586,7 +594,7 @@ html{
     }
 
     .info_2 iframe{
-        width: 80%;
+        width: 100%;
         padding-left: 10%;
         padding-right: 10%;
     }
