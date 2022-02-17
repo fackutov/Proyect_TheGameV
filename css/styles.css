@@ -17,29 +17,13 @@
     height: 120px;
     width: 100%;
     background-image:linear-gradient( rgb(140, 236, 153),rgb(166, 243, 189),rgb(140, 236, 153)) ;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 10;
 }
 
 .header div img:hover{
-    transform: scale(1.1);
-}
-
-.header div a{
-    padding: 20px;
-}
-
-.header nav ul{
-    display: flex;
-    padding: 10px;
-}
-
-.header nav ul li{
-    list-style: none;
-    margin: 20px;
+    transform: scale(1.05);
 }
 
 .header nav a{
@@ -52,9 +36,14 @@
     border-radius: 25%;
 }
 
-.header nav a:hover{
+.select:hover{
     background-color: #182a5e;
     color: rgb(140, 236, 153);
+}
+
+.bg-nav{
+    background-image: linear-gradient(rgb(140, 236, 153),rgb(166, 243, 189),rgb(140, 236, 153));
+    text-align: center;
 }
 
 /*  -----------------  MAIN  -----------------  */
@@ -115,8 +104,12 @@ html{
 }
 
 .text-tipo2{
+    display: inline;
     font-size: 40px;
-    text-align: start;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
 }
 
 /*  -----------------  MAIN INDEX  -----------------  */
@@ -131,6 +124,7 @@ html{
     width: 100%;
     align-items: center;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .info_1 div{
@@ -161,7 +155,7 @@ html{
     display: flex;
     align-items: center;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .info_2 div{
@@ -189,7 +183,6 @@ html{
     padding-left: 20px;
     font-size: 18px;
 }
-
 
 /*  -----------------  MAIN DESCARGAS  -----------------  */
 
@@ -418,6 +411,8 @@ html{
 }
 
 .form div{
+    display: flex;
+    width: 500px;
     padding: 10px;
 }
 
@@ -433,6 +428,14 @@ html{
 .form div textarea{
     background-color: rgb(140, 236, 153);
     resize: none;
+}
+
+.btn-send{
+    background-color:rgb(140, 236, 153) ;
+    color: #1f2f5c;
+    padding: 5px;
+    width: 500px;
+    border-radius: 10px;
 }
 
 /*  -----------------  FOOTER  -----------------  */
@@ -561,7 +564,7 @@ html{
     }
 
     .header nav a{
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .title{
@@ -569,7 +572,7 @@ html{
     }
 
     .text-tipo2{
-        font-size: 15px;
+        font-size: 10px;
     }
 
     /* ---------------  INDEX  ----------- */
@@ -751,16 +754,6 @@ html{
     .somos img{
         width: 100px;
         height: 100px;
-    }
-
-    .form h3{
-        padding: 30px;
-    }
-
-    .form div textarea{
-        width: 60%;
-        padding-left: 20%;
-        padding-right: 20%;
     }
 
     /* ---------------  FOOTER  ----------- */

@@ -12,17 +12,26 @@
 <body class="body">
 
     <header class="header">
-        <div>
-            <a href="index.html"><img src="multimedia/images/logos/logo.png" alt="logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="pages/descargar.html">descargar juegos</a></li>
-                <li><a href="pages/capturas.html" >capturas</a></li>
-                <li><a href="pages/guias.html">guias</a></li>
-                <li><a href="pages/contactanos.html">contactanos</a></li>
-            </ul> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="multimedia/images/logos/logo.png" alt="logo" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="active m-3 select" aria-current="page" href="#">Home</a>
+                        <a class="m-3 select" href="pages/descargar.html">Descargas</a>
+                        <a class="m-3 select" href="pages/capturas.html">Capturas</a>
+                        <a class="m-3 select" href="pages/guias.html">Guias</a>
+                        <a class="m-3 select" href="pages/contactanos.html">Contactanos</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
  
@@ -33,21 +42,37 @@
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
                 <div class="carousel-inner">
                     <h2 class="sub_title text-tipo1">Ultimo contenido agregado</h2>
                     <div class="carousel-item active mislider">
                         <a href="pages/capturas.html"><img src="multimedia/images/slider/slider1.jpg" class="d-block w-100" alt="..."></a>
                         <div class="carousel-caption d-md-block">
-                            <h3 class="text-tipo2">Horizon Zero Dawn</h3>
+                            <h3 class="text-tipo2">Horizon Zero Dawn</h3><br>
                             <p class="text-tipo2">Nueva galeria de capturas in-game</p>
                         </div>
                     </div>          
                     <div class="carousel-item mislider">
-                        <a href="pages/descargar.html"><img src="multimedia/images/slider/slider2.jpg" class="d-block w-100" alt="..."></a>
+                        <a href="https://www.playlostark.com/es-es" target="_blank"><img src="multimedia/images/slider/slider2.jpg" class="d-block w-100" alt="..."></a>
                         <div class="carousel-caption d-md-block">
-                            <h3 class="text-tipo2">Lost ark</h3>
-                            <p class="text-tipo2">Ultimo juego agregado, Descargalo</p>
+                            <h3 class="text-tipo2">Lost ark</h3><br>
+                            <p class="text-tipo2">Ultimo juego agregado, Descargalo ya</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item mislider">
+                        <a href="https://www.epicgames.com/store/es-ES/p/brothers-a-tale-of-two-sons" target="_blank"><img src="multimedia/images/slider/slider3.jpg" class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="text-tipo2">Epic Games</h3><br>
+                            <p class="text-tipo2">Descarga tu juego gratis de esta semana</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item mislider">
+                        <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank"><img src="multimedia/images/slider/slider4.jpg" class="d-block w-100" alt="..."></a>
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="text-tipo2">Proximamente</h3><br>
+                            <p class="text-tipo2">Elden Ring (25 de febrero)</p>
                         </div>
                     </div>
                 </div>
@@ -90,6 +115,18 @@
                         en una estupenda sorpresa por su original propuesta que ya podéis <br>
                         probar por vuestra propia cuenta en PS4, PS5 y PC.</p>  
                 </div>    
+            </div>
+            <div class="info_1">
+                <div>                
+                    <h3 class="texto_h3 titulo_info1">Teamfight Tactics SET 6.5 Noches De Neon</h3>
+                    <p class="texto_p parrafo_info1">La tecnología se apoderó de todo, pero <br>
+                        ¿ha ido demasiado lejos? Solo hay una forma de averiguarlo. <br> 
+                        Prueba la mejor y más reciente tecnología <br>
+                        con la nueva actualización del set.</p>
+                </div> 
+                <div> 
+                    <iframe src="https://www.youtube.com/embed/X2puvzR0Fks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div> 
             </div>
         </section>
     </main>

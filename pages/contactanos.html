@@ -12,17 +12,26 @@
 <body class="body">
     
     <header class="header">
-        <div>
-            <a href="../index.html"><img src="../multimedia/images/logos/logo.png" alt="logo"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html" >home</a></li>
-                <li><a href="descargar.html">descargar juegos</a></li>
-                <li><a href="capturas.html">capturas</a></li>
-                <li><a href="guias.html">guias</a></li>
-                <li><a href="contactanos.html">contactanos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../multimedia/images/logos/logo.png" alt="logo" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="active m-3 select" aria-current="page" href="../index.html">Home</a>
+                        <a class="m-3 select" href="descargar.html">Descargas</a>
+                        <a class="m-3 select" href="capturas.html">Capturas</a>
+                        <a class="m-3 select" href="guias.html">Guias</a>
+                        <a class="m-3 select" href="contactanos.html">Contactanos</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -50,23 +59,21 @@
             <h3 class="texto_h3">Tambien te invitamos a dejar tu opiñon y/o comentario para ayudarnos a mejorar</h3>
             <div>
                 <form id="comentario" action="" enctype="application/x-www-form-urlencoded">
-                    <div>
-                        <label for="">Nombre completo</label>
-                        <input type="text" required>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Nombre completo">
+                        <label for="floating">Nombre Completo</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Correo electronico</label>
+                      </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comentario</label>
                     </div>
                     <div>
-                        <label for="">Correo electronico</label>
-                        <input type="email" required>
-                    </div>
-                    <div>
-                        <label for="">Comentario</label>
-                    </div>
-                    <div>
-                        <textarea name="comentario" id="" cols="80" rows="15" required></textarea>
-                    </div>
-                    <div>
-                        <input type="submit">
-                    </div>
+                        <button class="btn-send puntoInteres" type="button">Enviar</button>
+                    </div>             
                 </form>
             </div>
         </section>
