@@ -33,7 +33,7 @@
     text-transform: capitalize;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     padding: 5px 10px;
-    border-radius: 25%;
+    border-radius: 10px;
 }
 
 .select:hover{
@@ -467,7 +467,7 @@ html{
 .puntoInteres:hover{
     background-color: #182a5e;
     color: rgb(140, 236, 153);
-    border-radius: 25%;
+    border-radius: 10px;
 }
 
 .footer section div a{
@@ -568,7 +568,7 @@ html{
     }
 
     .title{
-        padding-top: 60px;
+        padding-top: 70px;
     }
 
     .text-tipo2{
@@ -674,7 +674,6 @@ html{
         grid-row: 4/5;
     }
 
-
     .galeria_shadowOfTheTombRaider{
         display: grid;
         justify-content: space-between;
@@ -754,6 +753,14 @@ html{
     .somos img{
         width: 100px;
         height: 100px;
+    }
+
+    .form div{
+        width: 300px;
+    }
+
+    .btn-send{
+        width: 300px;
     }
 
     /* ---------------  FOOTER  ----------- */
