@@ -93,18 +93,24 @@ html
     text-shadow: $color1 (10, 10)
 
 .text-tipo2
-    display: inline
-    font-size: 40px
-    background-color: rgba(0, 0, 0, 0.596)
-    padding-left: 10px
-    padding-right: 10px
-    border-radius: 10px
+    text-align: start
+    font-size: 30px
 
+.carousel-caption
+    text-align: start !important
+    left: 8%
+
+.carousel-control-prev
+    width: 8%
+
+.carousel-control-next
+    width: 8%
+    
 /*  -----------------  MAIN INDEX  -----------------  */
 
 .mislider
-    padding-left: 10%
-    padding-right: 10%
+    padding-left: 2%
+    padding-right: 2%
 
 .carousel-indicators button
     width: 20px !important
@@ -112,6 +118,16 @@ html
     border-radius: 50%
     background-color: $color2 !important
     border: 2px solid $color1 !important
+
+.boton
+    background-color: $color2
+    color: $color1
+    padding: 12px
+    border-radius: 5px
+
+.boton:hover
+    background-color: $color1
+    color: $color2
 
 .info_1
     display: flex

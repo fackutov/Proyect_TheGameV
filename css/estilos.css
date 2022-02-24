@@ -98,18 +98,27 @@ html {
 }
 
 .text-tipo2 {
-  display: inline;
-  font-size: 40px;
-  background-color: rgba(0, 0, 0, 0.596);
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 10px;
+  text-align: start;
+  font-size: 30px;
+}
+
+.carousel-caption {
+  text-align: start !important;
+  left: 8%;
+}
+
+.carousel-control-prev {
+  width: 8%;
+}
+
+.carousel-control-next {
+  width: 8%;
 }
 
 /*  -----------------  MAIN INDEX  -----------------  */
 .mislider {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .carousel-indicators button {
@@ -118,6 +127,18 @@ html {
   border-radius: 50%;
   background-color: #b8b8b8 !important;
   border: 2px solid #1d1b64 !important;
+}
+
+.boton {
+  background-color: #b8b8b8;
+  color: #1d1b64;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  background-color: #1d1b64;
+  color: #b8b8b8;
 }
 
 .info_1 {
@@ -535,7 +556,7 @@ html {
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
   /* -------------  HEADER  ------------ */
   .text-tipo2 {
-    font-size: 28px;
+    font-size: 16px;
   }
 
   /* ---------------  INDEX  ----------- */
@@ -543,6 +564,11 @@ html {
     width: 15px !important;
     height: 15px !important;
     border: 1px solid #b8b8b8 !important;
+  }
+
+  .boton {
+    font-size: 12px;
+    padding: 8px;
   }
 
   .contenido_index1 iframe {
@@ -634,6 +660,7 @@ html {
 
   .text-tipo2 {
     font-size: 8px;
+    margin: 0px;
   }
 
   /* ---------------  INDEX  ----------- */
@@ -641,6 +668,11 @@ html {
     width: 5px !important;
     height: 5px !important;
     border: 1px solid #b8b8b8 !important;
+  }
+
+  .boton {
+    font-size: 8px;
+    padding: 2px;
   }
 
   .info_1 {
