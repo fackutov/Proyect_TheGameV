@@ -68,7 +68,7 @@ html {
   font-size: 20px;
 }
 
-.texto_p {
+.texto_p, .sub_title {
   color: #3b3b3d;
   font-size: 15px;
 }
@@ -85,8 +85,6 @@ html {
 
 .sub_title {
   text-align: center;
-  color: #3b3b3d;
-  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -262,10 +260,10 @@ html {
   display: grid;
   justify-content: center;
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 5%;
+  padding-left: 5%;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(3, 400px);
 }
@@ -311,10 +309,10 @@ html {
   display: grid;
   justify-content: center;
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 5%;
+  padding-left: 5%;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(3, 400px);
 }
@@ -387,10 +385,10 @@ html {
   display: grid;
   justify-content: center;
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 5%;
+  padding-left: 5%;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(2, 400px);
 }

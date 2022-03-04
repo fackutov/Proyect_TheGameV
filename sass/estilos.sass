@@ -1,9 +1,4 @@
-
-$color1: #1d1b64
-$color2: #b8b8b8
-$color3: rgb(225, 250, 255)
-$color4: #3b3b3d
-$color5: #ffffff
+@import "_variantes"
 
 *
     margin: 0
@@ -13,7 +8,7 @@ $color5: #ffffff
 
 .body
     height: 100vh
-    background-image: linear-gradient(rgb(211, 210, 210), rgb(111, 113, 219), rgb(211, 210, 210))
+    background-image: map-get($map: $gradiente, $key: grad_1)
 
 /*  -----------------  HEADER  -----------------  */
 
@@ -40,7 +35,7 @@ $color5: #ffffff
     color: $color2
 
 .bg-nav
-    background-image: linear-gradient($color2,rgb(200, 202, 224),$color2)
+    background-image: map-get($map: $gradiente, $key: grad_2)
     text-align: center
 
 /*  -----------------  MAIN  -----------------  */
@@ -81,9 +76,8 @@ html
     padding-top: 120px
 
 .sub_title
+    @extend .texto_p
     text-align: center
-    color: $color4
-    font-size: 20px
     text-transform: uppercase
 
 .text-tipo1
@@ -232,11 +226,7 @@ html
 .galeria_horizonZeroDawn
     display: grid
     justify-content: center
-    width: 100%
-    padding-left: 5%
-    padding-right: 5%
-    padding-top: 20px
-    padding-bottom: 20px
+    @include galery_cap(100%, 20px, 20px, 5%, 5%)
     grid-template-columns: repeat(2, 50%)
     grid-template-rows: repeat(3, 400px)
     
@@ -277,11 +267,7 @@ html
 .galeria_shadowOfTheTombRaider
     display: grid
     justify-content: center
-    width: 100%
-    padding-left: 5%
-    padding-right: 5%
-    padding-top: 20px
-    padding-bottom: 20px
+    @include galery_cap(100%, 20px, 20px, 5%, 5%)
     grid-template-columns: repeat(4, 25%)
     grid-template-rows: repeat(3, 400px)
 
@@ -346,11 +332,7 @@ html
 .galeria_godOfWar
     display: grid
     justify-content: center
-    width: 100%
-    padding-left: 5%
-    padding-right: 5%
-    padding-top: 20px
-    padding-bottom: 20px
+    @include galery_cap(100%, 20px, 20px, 5%, 5%)
     grid-template-columns: repeat(4, 25%)
     grid-template-rows: repeat(2, 400px)
 
