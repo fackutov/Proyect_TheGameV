@@ -1,0 +1,42 @@
+
+.footer{
+    width: 100%;
+    background-color: $color2;
+    & section{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    & div{
+        display: flex;
+        align-items: center;
+        & a{
+            padding: 5px 10px;
+        }
+        & p{
+            color: $color1;
+            font-size: 20px;
+        }
+        & img{
+            width: 50px;
+            height: 50px;
+        }
+    }  
+    & li{
+        list-style: none;
+    }
+}
+
+.puntoInteres{
+    text-decoration: none;
+    color: $color1;
+}
+
+.puntoInteres:hover{
+    background-color: $color1;
+    color: $color2;
+    border-radius: 10px;
+}
+
+.enlace:hover{
+    transform: scale(1.1);
+}

@@ -1,15 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
+.footer {
+  width: 100%;
+  background-color: #b8b8b8;
+}
+.footer section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer div {
+  display: flex;
+  align-items: center;
+}
+.footer div a {
+  padding: 5px 10px;
+}
+.footer div p {
+  color: #1d1b64;
+  font-size: 20px;
+}
+.footer div img {
+  width: 50px;
+  height: 50px;
+}
+.footer li {
+  list-style: none;
 }
 
-/*  -----------------  BODY  -----------------  */
-.body {
-  height: 100vh;
-  background-image: linear-gradient(#d3d2d2, #6f71db, #d3d2d2);
+.puntoInteres {
+  text-decoration: none;
+  color: #1d1b64;
 }
 
-/*  -----------------  HEADER  -----------------  */
+.puntoInteres:hover {
+  background-color: #1d1b64;
+  color: #b8b8b8;
+  border-radius: 10px;
+}
+
+.enlace:hover {
+  transform: scale(1.1);
+}
+
 .header {
   height: 120px;
   width: 100%;
@@ -41,82 +71,14 @@
   text-align: center;
 }
 
-/*  -----------------  MAIN  -----------------  */
-.subir {
-  background-color: #1d1b64;
-  position: fixed;
-  height: 50px;
-  width: 50px;
-  border: 2px solid #b8b8b8;
-  border-radius: 50%;
-  right: 20px;
-  bottom: 50px;
-  text-align: center;
-}
-.subir i {
-  color: #b8b8b8;
-  font-size: 35px;
-  line-height: 45px;
-  text-shadow: 0 0 25px black;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.texto_h3 {
-  font-size: 20px;
-}
-
-.texto_p, .sub_title {
-  color: #3b3b3d;
-  font-size: 15px;
-}
-
-.title {
-  background-color: #1d1b64;
-  color: #b8b8b8;
-  text-align: center;
-  font-size: 25px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-transform: uppercase;
-  padding-top: 120px;
-}
-
-.sub_title {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.text-tipo1 {
-  color: #000000;
-  padding-top: 20px;
-  font-size: 30px;
-  text-shadow: #1d1b64 10, 10;
-}
-
-.text-tipo2 {
-  text-align: start;
-  font-size: 30px;
-}
-
-.carousel-caption {
-  text-align: start !important;
-  left: 8%;
-}
-
-.carousel-control-prev {
-  width: 8%;
-}
-
-.carousel-control-next {
-  width: 8%;
-}
-
-/*  -----------------  MAIN INDEX  -----------------  */
+/*  -----------------  INDEX  -----------------  */
 .mislider {
   padding-left: 2%;
   padding-right: 2%;
+}
+.mislider .carousel-caption {
+  text-align: start !important;
+  left: 8%;
 }
 
 .carousel-indicators button {
@@ -125,6 +87,14 @@ html {
   border-radius: 50%;
   background-color: #b8b8b8 !important;
   border: 2px solid #1d1b64 !important;
+}
+
+.carousel-control-prev {
+  width: 8%;
+}
+
+.carousel-control-next {
+  width: 8%;
 }
 
 .boton {
@@ -150,7 +120,7 @@ html {
   width: 50%;
   flex-direction: column;
 }
-.info_1 iframe {
+.info_1 div iframe {
   padding-left: 20px;
   width: 90%;
   height: 360px;
@@ -211,7 +181,7 @@ html {
   border-radius: 20px;
 }
 
-/*  -----------------  MAIN DESCARGAS  -----------------  */
+/*  -----------------  DESCARGAS  -----------------  */
 .descargarJuegos {
   display: flex;
   padding: 50px;
@@ -239,7 +209,7 @@ html {
   transform: scale(1.1);
 }
 
-/*  -----------------  MAIN CAPTURAS  -----------------  */
+/*  -----------------  CAPTURAS  -----------------  */
 .nombre_juego {
   border: 2px solid #1f3268;
   text-align: center;
@@ -253,9 +223,9 @@ html {
 
 .galeria div:hover {
   transform: scale(1.05);
-  /*  HORIZON ZERO DAWN  */
 }
 
+/*  HORIZON ZERO DAWN  */
 .galeria_horizonZeroDawn {
   display: grid;
   justify-content: center;
@@ -267,8 +237,7 @@ html {
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(3, 400px);
 }
-
-.img1HZD {
+.galeria_horizonZeroDawn .img1HZD {
   grid-column: 1/2;
   grid-row: 1/3;
   border: 10px solid #e1faff;
@@ -276,8 +245,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img2HZD {
+.galeria_horizonZeroDawn .img2HZD {
   grid-column: 2/3;
   grid-row: 1/2;
   border: 10px solid #e1faff;
@@ -285,8 +253,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img3HZD {
+.galeria_horizonZeroDawn .img3HZD {
   grid-column: 2/3;
   grid-row: 2/3;
   border: 10px solid #e1faff;
@@ -294,17 +261,16 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img4HZD {
+.galeria_horizonZeroDawn .img4HZD {
   grid-column: 1/3;
   grid-row: 3/4;
   border: 10px solid #e1faff;
   background-image: url(../multimedia/images/capturas_de_pantalla/horizon_zero_dawn_2.jpg);
   background-size: cover;
   background-position: center;
-  /* SHADOW OF THE TOMB RAIDER  */
 }
 
+/* SHADOW OF THE TOMB RAIDER  */
 .galeria_shadowOfTheTombRaider {
   display: grid;
   justify-content: center;
@@ -316,8 +282,7 @@ html {
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(3, 400px);
 }
-
-.img1SOTTR {
+.galeria_shadowOfTheTombRaider .img1SOTTR {
   grid-column: 1/2;
   grid-row: 1/3;
   border: 10px solid #e1faff;
@@ -325,8 +290,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img2SOTTR {
+.galeria_shadowOfTheTombRaider .img2SOTTR {
   grid-column: 2/3;
   grid-row: 1/2;
   border: 10px solid #e1faff;
@@ -334,8 +298,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img3SOTTR {
+.galeria_shadowOfTheTombRaider .img3SOTTR {
   grid-column: 3/5;
   grid-row: 1/2;
   border: 10px solid #e1faff;
@@ -343,8 +306,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img4SOTTR {
+.galeria_shadowOfTheTombRaider .img4SOTTR {
   grid-column: 2/4;
   grid-row: 2/3;
   border: 10px solid #e1faff;
@@ -352,8 +314,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img5SOTTR {
+.galeria_shadowOfTheTombRaider .img5SOTTR {
   grid-column: 4/5;
   grid-row: 2/4;
   border: 10px solid #e1faff;
@@ -361,8 +322,7 @@ html {
   background-size: cover;
   background-position: left;
 }
-
-.img6SOTTR {
+.galeria_shadowOfTheTombRaider .img6SOTTR {
   grid-column: 1/3;
   grid-row: 3/4;
   border: 10px solid #e1faff;
@@ -370,17 +330,16 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img7SOTTR {
+.galeria_shadowOfTheTombRaider .img7SOTTR {
   grid-column: 3/4;
   grid-row: 3/4;
   border: 10px solid #e1faff;
   background-image: url(../multimedia/images/capturas_de_pantalla/SOTTombRaider_cap7.jpg);
   background-size: cover;
   background-position: center;
-  /* GOD OF WAR  */
 }
 
+/* GOD OF WAR  */
 .galeria_godOfWar {
   display: grid;
   justify-content: center;
@@ -392,8 +351,7 @@ html {
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(2, 400px);
 }
-
-.img1gow {
+.galeria_godOfWar .img1gow {
   grid-column: 1/3;
   grid-row: 1/2;
   border: 10px solid #e1faff;
@@ -401,8 +359,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img2gow {
+.galeria_godOfWar .img2gow {
   grid-column: 3/4;
   grid-row: 1/2;
   border: 10px solid #e1faff;
@@ -410,8 +367,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img3gow {
+.galeria_godOfWar .img3gow {
   grid-column: 4/5;
   grid-row: 1/3;
   border: 10px solid #e1faff;
@@ -419,8 +375,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img4gow {
+.galeria_godOfWar .img4gow {
   grid-column: 1/2;
   grid-row: 2/3;
   border: 10px solid #e1faff;
@@ -428,8 +383,7 @@ html {
   background-size: cover;
   background-position: center;
 }
-
-.img5gow {
+.galeria_godOfWar .img5gow {
   grid-column: 2/4;
   grid-row: 2/3;
   border: 10px solid #e1faff;
@@ -438,12 +392,11 @@ html {
   background-position: center;
 }
 
-/*  -----------------  MAIN GUIAS  -----------------  */
+/*  -----------------  GUIAS  -----------------  */
 .guide {
   display: flex;
   flex-direction: column;
 }
-
 .guide div div iframe {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -458,7 +411,7 @@ html {
   flex-wrap: wrap;
 }
 
-/*  -----------------  MAIN CONTACTO  -----------------  */
+/*  -----------------  CONTACTO  -----------------  */
 .somos {
   display: flex;
   justify-content: space-evenly;
@@ -470,7 +423,6 @@ html {
 .somos1 h2 {
   width: 30%;
 }
-
 .somos1 p {
   width: 70%;
   padding-right: 40px;
@@ -508,47 +460,74 @@ html {
   border-radius: 10px;
 }
 
-/*  -----------------  FOOTER  -----------------  */
-.footer {
-  width: 100%;
-  background-color: #b8b8b8;
+* {
+  margin: 0;
+  padding: 0;
 }
-.footer section {
-  display: flex;
-  justify-content: space-evenly;
+
+/*  -----------------  BODY  -----------------  */
+.body {
+  height: 100vh;
+  background-image: linear-gradient(#d3d2d2, #6f71db, #d3d2d2);
 }
-.footer div {
-  display: flex;
-  align-items: center;
+
+/*  -----------------  MAIN  -----------------  */
+.subir {
+  background-color: #1d1b64;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #b8b8b8;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 50px;
+  text-align: center;
 }
-.footer div a {
-  padding: 5px 10px;
+.subir i {
+  color: #b8b8b8;
+  font-size: 35px;
+  line-height: 45px;
+  text-shadow: 0 0 25px black;
 }
-.footer div p {
-  color: #1d1b64;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.texto_h3 {
   font-size: 20px;
 }
-.footer div img {
-  width: 50px;
-  height: 50px;
-}
-.footer li {
-  list-style: none;
+
+.texto_p, .sub_title {
+  color: #3b3b3d;
+  font-size: 15px;
 }
 
-.puntoInteres {
-  text-decoration: none;
-  color: #1d1b64;
-}
-
-.puntoInteres:hover {
+.title {
   background-color: #1d1b64;
   color: #b8b8b8;
-  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  padding-top: 120px;
 }
 
-.enlace:hover {
-  transform: scale(1.1);
+.sub_title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-tipo1 {
+  color: #000000;
+  padding-top: 20px;
+  font-size: 30px;
+  text-shadow: #1d1b64 10, 10;
+}
+
+.text-tipo2 {
+  text-align: start;
+  font-size: 30px;
 }
 
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
@@ -611,17 +590,14 @@ html {
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(4, 400px);
   }
-
-  .img2SOTTR {
+  .galeria_shadowOfTheTombRaider .img2SOTTR {
     grid-column: 2/4;
   }
-
-  .img3SOTTR {
+  .galeria_shadowOfTheTombRaider .img3SOTTR {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-
-  .img5SOTTR {
+  .galeria_shadowOfTheTombRaider .img5SOTTR {
     grid-column: 2/4;
     grid-row: 4/5;
   }
@@ -632,8 +608,7 @@ html {
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, 400px);
   }
-
-  .img3gow {
+  .galeria_godOfWar .img3gow {
     grid-column: 1/4;
     grid-row: 3/4;
   }
@@ -758,22 +733,18 @@ html {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(4, 250px);
   }
-
-  .img1HZD {
+  .galeria_horizonZeroDawn .img1HZD {
     grid-row: 1/2;
   }
-
-  .img2HZD {
+  .galeria_horizonZeroDawn .img2HZD {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .img3HZD {
+  .galeria_horizonZeroDawn .img3HZD {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .img4HZD {
+  .galeria_horizonZeroDawn .img4HZD {
     grid-row: 4/5;
   }
 
@@ -783,38 +754,31 @@ html {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(7, 250px);
   }
-
-  .img1SOTTR {
+  .galeria_shadowOfTheTombRaider .img1SOTTR {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-
-  .img2SOTTR {
+  .galeria_shadowOfTheTombRaider .img2SOTTR {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .img3SOTTR {
+  .galeria_shadowOfTheTombRaider .img3SOTTR {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .img4SOTTR {
+  .galeria_shadowOfTheTombRaider .img4SOTTR {
     grid-column: 1/2;
     grid-row: 4/5;
   }
-
-  .img5SOTTR {
+  .galeria_shadowOfTheTombRaider .img5SOTTR {
     grid-column: 1/2;
     grid-row: 5/6;
   }
-
-  .img6SOTTR {
+  .galeria_shadowOfTheTombRaider .img6SOTTR {
     grid-column: 1/2;
     grid-row: 6/7;
   }
-
-  .img7SOTTR {
+  .galeria_shadowOfTheTombRaider .img7SOTTR {
     grid-column: 1/2;
     grid-row: 7/8;
   }
@@ -825,27 +789,22 @@ html {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(5, 250px);
   }
-
-  .img1gow {
+  .galeria_godOfWar .img1gow {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-
-  .img2gow {
+  .galeria_godOfWar .img2gow {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-
-  .img3gow {
+  .galeria_godOfWar .img3gow {
     grid-column: 1/2;
     grid-row: 3/4;
   }
-
-  .img4gow {
+  .galeria_godOfWar .img4gow {
     grid-row: 4/5;
   }
-
-  .img5gow {
+  .galeria_godOfWar .img5gow {
     grid-column: 1/2;
     grid-row: 5/6;
   }
