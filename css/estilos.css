@@ -56,19 +56,86 @@
   padding: 5px 10px;
   border-radius: 10px;
 }
-
 .header div img:hover {
   transform: scale(1.05);
 }
-
-.select:hover {
+.header .select:hover {
   background-color: #1d1b64;
   color: #b8b8b8;
 }
-
-.bg-nav {
+.header .bg-nav {
   background-image: linear-gradient(#b8b8b8, #c8cae0, #b8b8b8);
   text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*  -----------------  BODY  -----------------  */
+.body {
+  height: 100vh;
+  background-image: linear-gradient(#d3d2d2, #6f71db, #d3d2d2);
+}
+
+/*  -----------------  MAIN  -----------------  */
+.subir {
+  background-color: #1d1b64;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #b8b8b8;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 50px;
+  text-align: center;
+}
+.subir i {
+  color: #b8b8b8;
+  font-size: 35px;
+  line-height: 45px;
+  text-shadow: 0 0 25px black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.texto_h3 {
+  font-size: 20px;
+}
+
+.texto_p, .sub_title {
+  color: #3b3b3d;
+  font-size: 15px;
+}
+
+.title {
+  background-color: #1d1b64;
+  color: #b8b8b8;
+  text-align: center;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: uppercase;
+  padding-top: 120px;
+}
+
+.sub_title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-tipo1 {
+  color: #000000;
+  padding-top: 20px;
+  font-size: 30px;
+  text-shadow: #1d1b64 10, 10;
+}
+
+.text-tipo2 {
+  text-align: start;
+  font-size: 30px;
 }
 
 /*  -----------------  INDEX  -----------------  */
@@ -204,8 +271,7 @@
 .descargarJuegos div a {
   padding: 10px;
 }
-
-.descargarJuegos div div a:hover {
+.descargarJuegos div a:hover {
   transform: scale(1.1);
 }
 
@@ -460,76 +526,6 @@
   border-radius: 10px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/*  -----------------  BODY  -----------------  */
-.body {
-  height: 100vh;
-  background-image: linear-gradient(#d3d2d2, #6f71db, #d3d2d2);
-}
-
-/*  -----------------  MAIN  -----------------  */
-.subir {
-  background-color: #1d1b64;
-  position: fixed;
-  height: 50px;
-  width: 50px;
-  border: 2px solid #b8b8b8;
-  border-radius: 50%;
-  right: 20px;
-  bottom: 50px;
-  text-align: center;
-}
-.subir i {
-  color: #b8b8b8;
-  font-size: 35px;
-  line-height: 45px;
-  text-shadow: 0 0 25px black;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.texto_h3 {
-  font-size: 20px;
-}
-
-.texto_p, .sub_title {
-  color: #3b3b3d;
-  font-size: 15px;
-}
-
-.title {
-  background-color: #1d1b64;
-  color: #b8b8b8;
-  text-align: center;
-  font-size: 25px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-transform: uppercase;
-  padding-top: 120px;
-}
-
-.sub_title {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.text-tipo1 {
-  color: #000000;
-  padding-top: 20px;
-  font-size: 30px;
-  text-shadow: #1d1b64 10, 10;
-}
-
-.text-tipo2 {
-  text-align: start;
-  font-size: 30px;
-}
-
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
   /* -------------  HEADER  ------------ */
   .text-tipo2 {
@@ -549,10 +545,10 @@ html {
   }
 
   .contenido_index1 iframe {
-    width: 100%;
-    height: 250px;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100% !important;
+    height: 250px !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
   }
 
   .fondo {
@@ -657,10 +653,10 @@ html {
     width: 100%;
   }
   .info_1 iframe {
-    height: 200px;
-    width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
+    height: 200px !important;
+    width: 100% !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
   }
 
   .titulo_info1 {
@@ -683,10 +679,10 @@ html {
     width: 100%;
   }
   .info_2 iframe {
-    height: 200px;
-    width: 100%;
-    padding-left: 3%;
-    padding-right: 3%;
+    height: 200px !important;
+    width: 100% !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
   }
 
   .titulo_info2 {
