@@ -4,6 +4,17 @@
 
     /* -------------  HEADER  ------------ */
 
+    .header{
+        height: 60px;
+        div img{
+            width: 80px;
+            height: 40px;
+        }
+        nav a{
+            font-size: 14px;
+        }
+    }
+
     .text-tipo2{
         font-size: 16px;
     }

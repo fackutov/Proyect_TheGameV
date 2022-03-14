@@ -528,6 +528,17 @@ html {
 
 @media only screen and (min-width: 720px) and (max-width: 1280px) {
   /* -------------  HEADER  ------------ */
+  .header {
+    height: 60px;
+  }
+  .header div img {
+    width: 80px;
+    height: 40px;
+  }
+  .header nav a {
+    font-size: 14px;
+  }
+
   .text-tipo2 {
     font-size: 16px;
   }
