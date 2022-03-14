@@ -539,6 +539,11 @@ html {
     font-size: 14px;
   }
 
+  .title {
+    padding-top: 60px;
+    font-size: 18px;
+  }
+
   .text-tipo2 {
     font-size: 16px;
   }
