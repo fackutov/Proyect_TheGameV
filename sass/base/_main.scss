@@ -54,17 +54,20 @@ html{
     padding-top: 120px;
 }
 
+.nombre_juego{
+    border: 2px solid #1f3268;
+    text-align: center;
+    background-color: $color2;
+    font-size: 30px;
+    color: $color1;
+}
+
 .sub_title{
     @extend .texto_p;
     text-align: center;
-    text-transform: uppercase;
-}
-
-.text-tipo1{
-    color: #000000;
-    padding-top: 20px;
+    text-transform: capitalize;
     font-size: 30px;
-    text-shadow: $color1 (10, 10);
+    color: $color1;
 }
 
 .text-tipo2{
@@ -74,41 +77,41 @@ html{
 
 /*  -----------------  INDEX  -----------------  */
 
-.mislider{
-    padding-left: 2%;
-    padding-right: 2%;
-    .carousel-caption{
-        text-align: start !important;
-        left: 8%;
+.carousel{
+    padding-bottom: 50px;
+    .carousel-indicators button{
+        width: 20px !important;
+        height: 20px !important;
+        border-radius: 50%;
+        background-color: $color2 !important;
+        border: 2px solid $color1 !important;
+    }
+    div .mislider{
+        padding-left: 2%;
+        padding-right: 2%;
+        .carousel-caption{
+            text-align: start !important;
+            left: 8%;
+        }
+    }
+    .carousel-control-prev{
+        width: 8%;
+    }  
+    .carousel-control-next{
+        width: 8%;
     }
 }
 
-.carousel-indicators button{
-    width: 20px !important;
-    height: 20px !important;
-    border-radius: 50%;
-    background-color: $color2 !important;
-    border: 2px solid $color1 !important;
-}
-
-.carousel-control-prev{
-    width: 8%;
-}
-
-.carousel-control-next{
-    width: 8%;
-}
 
 .boton{
     background-color: $color2;
     color: $color1;
     padding: 12px;
     border-radius: 5px;
-}
-
-.boton:hover{
-    background-color: $color1;
-    color: $color2;
+    &:hover{
+        background-color: $color1;
+        color: $color2;
+    }
 }
 
 .info_1{
@@ -120,26 +123,24 @@ html{
         display: flex;
         width: 50%;
         flex-direction: column;
-        & iframe{
+        iframe{
             padding-left: 20px;
             width: 90%;
             height: 360px;
         }
     }
-}
-
-.titulo_info1{
-    padding-bottom: 30px;
-    text-align: end;
-    padding-right: 20px;
-    color: $color1;
-}
-
-.parrafo_info1{
-    text-align: end;
-    padding-right: 20px;
-    font-size: 18px;
-    color: $color5;
+    .titulo_info1{
+        padding-bottom: 30px;
+        text-align: end;
+        padding-right: 20px;
+        color: $color1;
+    }    
+    .parrafo_info1{
+        text-align: end;
+        padding-right: 20px;
+        font-size: 18px;
+        color: $color5;
+    }
 }
 
 .info_2{
@@ -147,34 +148,30 @@ html{
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    .video_2{
+        align-items: flex-end;
+    }
     div{
         display: flex;
         width: 50%;
         flex-direction: column;
+        iframe{
+            padding-right: 20px;
+            width: 90%;
+            height: 360px;
+        }
     }
-    iframe{
-        padding-right: 20px;
-        width: 90%;
-        height: 360px;
+    .titulo_info2{
+        padding-bottom: 30px;
+        padding-left: 20px;
+        color: $color1;
+    }    
+    .parrafo_info2{
+        padding-left: 20px;
+        font-size: 18px;
+        color: $color5;
     }
 }
-
-.video_2{
-    align-items: flex-end;
-}
-
-.titulo_info2{
-    padding-bottom: 30px;
-    padding-left: 20px;
-    color: $color1;
-}
-
-.parrafo_info2{
-    padding-left: 20px;
-    font-size: 18px;
-    color: $color5;
-}
-
 .fondo{
     background-color: #0000006c;
     margin: 20px;
@@ -206,9 +203,9 @@ html{
     div{ 
         a{ 
             padding: 10px;
-        }
-        a:hover{
-            transform: scale(1.1);
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -216,19 +213,11 @@ html{
 
 /*  -----------------  CAPTURAS  -----------------  */
 
-.nombre_juego{
-    border: 2px solid #1f3268;
-    text-align: center;
-    background-color: $color2;
-    font-size: 30px;
-}
-
 .galeria div{
     transition: all 1s;
-}
-
-.galeria div:hover{
-    transform: scale(1.05);
+    &:hover{
+        transform: scale(1.05);
+    }    
 }
 
         /*  HORIZON ZERO DAWN  */
@@ -450,13 +439,12 @@ html{
             background-color: $color2;
             resize: none;
         }
+        .btn-send{
+            background-color: $color2;
+            color: #1f2f5c;
+            padding: 5px;
+            width: 500px;
+            border-radius: 10px;
+        }
     }
-}
-
-.btn-send{
-    background-color: $color2;
-    color: #1f2f5c;
-    padding: 5px;
-    width: 500px;
-    border-radius: 10px;
 }

@@ -25,28 +25,32 @@
     }
             
     /* ---------------  INDEX  ----------- */
-
-    .carousel-indicators button{
-        width: 15px !important;
-        height: 15px !important;
-        border: 1px solid $color2 !important;
+    .carousel{
+        padding-bottom: 20px;
+        .carousel-indicators button{
+            width: 15px !important;
+            height: 15px !important;
+        }
+        div .mislider{
+            padding-bottom: 3%;
+            div .boton{
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
     }
 
-    .boton{
-        font-size: 12px;
-        padding: 8px;
-    }
-
-    .contenido_index1 iframe{
+    .contenido_index1{
+        iframe{
         width: 100% !important;
         height: 250px !important;
         padding-left: 5% !important;
         padding-right: 5% !important;
-    }
-
-    .fondo{
-        margin-left: 5% !important;
-        margin-right: 5% !important;
+        }
+        .fondo{
+            margin-left: 5% !important;
+            margin-right: 5% !important;
+        }
     }
 
     /* ---------------  DESCARGAS  --------------------*/
@@ -65,12 +69,11 @@
                 flex-direction: column;
             }
         }
-    }
-
-    .descargarJuegos iframe{
-        width: 50%;
-        height: 250px;
-        align-self: center;
+        iframe{
+            width: 50%;
+            height: 250px;
+            align-self: center;
+        }
     }
 
     /* ---------------  CAPTURAS  -----------*/

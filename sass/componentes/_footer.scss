@@ -24,19 +24,18 @@
     li{
         list-style: none;
     }
+    .puntoInteres{
+        text-decoration: none;
+        color: $color1;
+        &:hover{
+            background-color: $color1;
+            color: $color2;
+            border-radius: 10px;
+        } 
+    } 
+    .enlace:hover{
+        transform: scale(1.1);
+    }
+    
 }
 
-.puntoInteres{
-    text-decoration: none;
-    color: $color1;
-}
-
-.puntoInteres:hover{
-    background-color: $color1;
-    color: $color2;
-    border-radius: 10px;
-}
-
-.enlace:hover{
-    transform: scale(1.1);
-}
