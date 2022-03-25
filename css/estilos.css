@@ -72,6 +72,14 @@ html {
 }
 
 /*  -----------------  INDEX  -----------------  */
+.header {
+  height: 60px;
+}
+.header div img {
+  width: 240px;
+  height: 98px;
+}
+
 .carousel {
   padding-bottom: 50px;
 }
@@ -517,7 +525,7 @@ html {
     height: 60px;
   }
   .header div img {
-    width: 80px;
+    width: 120px;
     height: 40px;
   }
   .header nav a {
@@ -618,7 +626,7 @@ html {
     height: 60px;
   }
   .header div img {
-    width: 80px;
+    width: 120px;
     height: 40px;
   }
   .header nav a {

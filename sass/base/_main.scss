@@ -77,6 +77,14 @@ html{
 
 /*  -----------------  INDEX  -----------------  */
 
+.header{
+    height: 60px;
+    div img{
+        width: 240px;
+        height: 98px;
+    }
+}
+
 .carousel{
     padding-bottom: 50px;
     .carousel-indicators button{
