@@ -234,7 +234,7 @@ html {
   grid-column: 1/2;
   grid-row: 1/3;
   border: 10px solid #e1faff;
-  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_1.png);
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -242,7 +242,7 @@ html {
   grid-column: 2/3;
   grid-row: 1/2;
   border: 10px solid #e1faff;
-  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_2.png);
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -250,7 +250,7 @@ html {
   grid-column: 3/5;
   grid-row: 1/2;
   border: 10px solid #e1faff;
-  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_3.png);
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_3.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -258,7 +258,7 @@ html {
   grid-column: 2/4;
   grid-row: 2/3;
   border: 10px solid #e1faff;
-  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_5.png);
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_5.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -266,7 +266,7 @@ html {
   grid-column: 4/5;
   grid-row: 2/4;
   border: 10px solid #e1faff;
-  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_4.png);
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_4.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -274,7 +274,7 @@ html {
   grid-column: 1/3;
   grid-row: 3/4;
   border: 10px solid #e1faff;
-  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_6.png);
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_6.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -282,7 +282,7 @@ html {
   grid-column: 3/4;
   grid-row: 3/4;
   border: 10px solid #e1faff;
-  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_7.png);
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_7.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -485,8 +485,8 @@ html {
   flex-direction: column;
 }
 .guide div div iframe {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 10px;
+  margin-bottom: 10px;
   border: 5px solid #1f3268;
   align-items: center;
 }
@@ -548,7 +548,9 @@ html {
 
 .footer {
   width: 100%;
+  height: 100px;
   background-color: #b8b8b8;
+  padding-top: 20px;
 }
 .footer section {
   display: flex;
@@ -1031,6 +1033,10 @@ html {
   }
 
   /* ---------------  FOOTER  ----------- */
+  .footer {
+    height: 60px;
+    padding-top: 10px;
+  }
   .footer li {
     font-size: 14px;
   }
