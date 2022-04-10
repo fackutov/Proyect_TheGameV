@@ -227,6 +227,71 @@ html{
         transform: scale(1.05);
     }    
 }
+        /* DARKSIDERS 3  */
+
+.galeria_darksiders3{
+    display: grid;
+    justify-content: center;
+    @include galery_cap(100%, 20px, 20px, 5%, 5%);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 400px);
+    .img1darksiders3{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        border: 10px solid $color3;
+        background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_1.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img2darksiders3{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        border: 10px solid $color3;
+        background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_2.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img3darksiders3{
+        grid-column: 3/5;
+        grid-row: 1/2;
+        border: 10px solid $color3;
+        background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_3.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img4darksiders3{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        border: 10px solid $color3;
+        background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_5.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img5darksiders3{
+        grid-column: 4/5;
+        grid-row: 2/4;
+        border: 10px solid $color3;
+        background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_4.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img6darksiders3{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        border: 10px solid $color3;
+        background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_6.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .img7darksiders3{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        border: 10px solid $color3;
+        background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_7.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
 
         /*  HORIZON ZERO DAWN  */
 
@@ -387,6 +452,31 @@ html{
 }
 
 /*  -----------------  GUIAS  -----------------  */
+
+.gameplays_yt{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 120px;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    background-color: #0000006c;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    h2{
+        align-self: center;
+        color: $color1;
+    }
+    img{
+        width: 120px;
+        height: 120px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
 
 .guide{
     display: flex;

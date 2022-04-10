@@ -218,6 +218,75 @@ html {
   transform: scale(1.05);
 }
 
+/* DARKSIDERS 3  */
+.galeria_darksiders3 {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 5%;
+  padding-left: 5%;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 400px);
+}
+.galeria_darksiders3 .img1darksiders3 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border: 10px solid #e1faff;
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_1.png);
+  background-size: cover;
+  background-position: center;
+}
+.galeria_darksiders3 .img2darksiders3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border: 10px solid #e1faff;
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_2.png);
+  background-size: cover;
+  background-position: center;
+}
+.galeria_darksiders3 .img3darksiders3 {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  border: 10px solid #e1faff;
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_3.png);
+  background-size: cover;
+  background-position: center;
+}
+.galeria_darksiders3 .img4darksiders3 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  border: 10px solid #e1faff;
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_5.png);
+  background-size: cover;
+  background-position: center;
+}
+.galeria_darksiders3 .img5darksiders3 {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  border: 10px solid #e1faff;
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_4.png);
+  background-size: cover;
+  background-position: center;
+}
+.galeria_darksiders3 .img6darksiders3 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  border: 10px solid #e1faff;
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_6.png);
+  background-size: cover;
+  background-position: center;
+}
+.galeria_darksiders3 .img7darksiders3 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  border: 10px solid #e1faff;
+  background-image: url(../multimedia/images/capturas_de_pantalla/Darksiders3_7.png);
+  background-size: cover;
+  background-position: center;
+}
+
 /*  HORIZON ZERO DAWN  */
 .galeria_horizonZeroDawn {
   display: grid;
@@ -386,6 +455,31 @@ html {
 }
 
 /*  -----------------  GUIAS  -----------------  */
+.gameplays_yt {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 120px;
+  margin-left: 10%;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  background-color: #0000006c;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gameplays_yt h2 {
+  align-self: center;
+  color: #1d1b64;
+}
+.gameplays_yt img {
+  width: 120px;
+  height: 120px;
+}
+.gameplays_yt img:hover {
+  transform: scale(1.1);
+}
+
 .guide {
   display: flex;
   flex-direction: column;
@@ -591,6 +685,24 @@ html {
   }
 
   /* ---------------  CAPTURAS  -----------*/
+  .galeria_darksiders3 {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, 400px);
+  }
+  .galeria_darksiders3 .img2darksiders3 {
+    grid-column: 2/4;
+  }
+  .galeria_darksiders3 .img3darksiders3 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .galeria_darksiders3 .img5darksiders3 {
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+
   .galeria_shadowOfTheTombRaider {
     display: grid;
     justify-content: space-between;
@@ -618,6 +730,19 @@ html {
   .galeria_godOfWar .img3gow {
     grid-column: 1/4;
     grid-row: 3/4;
+  }
+
+  /* ---------------  GAMEPLAYS  -----------*/
+  .gameplays_yt {
+    height: 100px;
+  }
+  .gameplays_yt h2 {
+    font-size: 18px;
+  }
+  .gameplays_yt img {
+    width: 100px;
+    height: 100px;
+    border-left: 10px;
   }
 }
 @media only screen and (max-width: 719px) {
@@ -734,6 +859,41 @@ html {
   }
 
   /* ---------------  CAPTURAS  ----------- */
+  .galeria_darksiders3 {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(7, 250px);
+  }
+  .galeria_darksiders3 .img1darksiders3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .galeria_darksiders3 .img2darksiders3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .galeria_darksiders3 .img3darksiders3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .galeria_darksiders3 .img4darksiders3 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .galeria_darksiders3 .img5darksiders3 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .galeria_darksiders3 .img6darksiders3 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .galeria_darksiders3 .img7darksiders3 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+
   .galeria_horizonZeroDawn {
     display: grid;
     justify-content: space-between;
@@ -817,6 +977,17 @@ html {
   }
 
   /* ---------------  GUIAS  ----------- */
+  .gameplays_yt {
+    height: 60px;
+  }
+  .gameplays_yt h2 {
+    font-size: 16px;
+  }
+  .gameplays_yt img {
+    width: 60px;
+    height: 60px;
+  }
+
   .guideGalery {
     flex-direction: column;
     padding-left: 10%;
