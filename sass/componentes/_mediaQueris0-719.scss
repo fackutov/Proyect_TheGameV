@@ -118,6 +118,38 @@
 
     /* ---------------  CAPTURAS  ----------- */
 
+    .galeria_NierReplicant{
+        display: grid;
+        justify-content: center;
+        @include galery_cap(100%, 20px, 20px, 5%, 5%);
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(6, 250px);
+        .img1NierReplicant{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .img2NierReplicant{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .img3NierReplicant{
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+        .img4NierReplicant{
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+        .img5NierReplicant{
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+        .img6NierReplicant{
+            grid-column: 1/2;
+            grid-row: 6/7;
+        }
+    }
+
     .galeria_hellblade{
         display: grid;
         justify-content: center;
